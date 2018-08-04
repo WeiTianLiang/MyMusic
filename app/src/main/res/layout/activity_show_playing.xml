@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#333333"
+    tools:context="com.example.wtl.mymusic.ShowListereningMusic.View.ShowPlayingActivity">
+
+    <TextView
+        android:id="@+id/listerename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:fitsSystemWindows="true"
+        android:text="成全"
+        android:textColor="#fff"
+        android:textSize="22sp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/lyric"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/boo"
+        android:layout_below="@+id/listerename" />
+
+    <LinearLayout
+        android:id="@+id/bott"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/listerenlike"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="@mipmap/lovee" />
+
+        <ImageView
+            android:id="@+id/listerendown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="@mipmap/downn" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bott1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bott"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/listerenwhile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@mipmap/gowhile" />
+
+        <ImageView
+            android:id="@+id/listerenprivous"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:src="@mipmap/privoussong" />
+
+        <ImageView
+            android:id="@+id/listerenplay"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/listerennext"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:src="@mipmap/nextsong" />
+
+        <ImageView
+            android:id="@+id/listerenlist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@mipmap/listplaying" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/boo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bott1"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:id="@+id/nowtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="00:00"
+            android:textColor="#fff" />
+
+        <SeekBar
+            android:id="@+id/seekbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="12"
+            android:max="100"
+            android:maxHeight="2.0dp"
+            android:minHeight="2.0dp"
+            android:progressDrawable="@drawable/seekbar" />
+
+        <TextView
+            android:id="@+id/alltime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="00:00"
+            android:textColor="#fff" />
+
+    </LinearLayout>
+
+</RelativeLayout>

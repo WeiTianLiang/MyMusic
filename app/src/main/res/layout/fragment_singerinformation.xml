@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/sinfhead"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:scaleType="fitXY" />
+
+    <ImageView
+        android:id="@+id/sinfback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:src="@mipmap/back"/>
+
+    <TextView
+        android:id="@+id/sinfname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="160dp"/>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/sinfnavion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabGravity="center"
+        app:tabIndicatorColor="#49dc5a"
+        app:tabIndicatorHeight="2dp"
+        app:tabPadding="5dp"
+        android:background="#efefef"
+        app:tabSelectedTextColor="#49dc5a"
+        app:tabTextAppearance="@style/TabLayoutlitterSize"
+        app:tabTextColor="#d7d7d7"
+        android:layout_below="@+id/sinfhead"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#aeaeae"
+        android:layout_below="@+id/sinfnavion"/>
+
+    <FrameLayout
+        android:id="@+id/sinffragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sinfnavion"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager_sinf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sinffragment"/>
+
+</RelativeLayout>
